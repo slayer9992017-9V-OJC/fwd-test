@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Volgren Nanotech Devices</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/volgreniot.jpg" alt="Volgren Logo"></a>
+      <i class="fa fa-bars"></i>
+      <div class="nav-links">
+        <i class="fa fa-times"></i>
+        <ul>
+     <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="products.html">Our Products</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="upcoming.html">Upcoming Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+
+<main>
+    <section class="products-section">
+      <h1 class="michroma-regular">Volgren Nanotech Devices</h1>
+      <p class="products-intro">Forged in secrecy. Refined by science. Engineered for the extraordinary.</p>
+      <h3>If you're interested in a product you MUST register with us first as we don't do international shipping. Negotiations or previewing of the products are ONLY available in person as they are all made with highly classified Volgren technology and we will open a wormhole that leads to our undiscolsed facility somewhere on Earth</h3>
+      <br>
+
+      <div class="products-grid">
+
+ <div class="product-card">
+  <img id="productImage" src="images/ixpromax-black.jpg" alt="Volgren iX Pro Max">
+  <h2>Volgren iX Pro Max</h2>
+  <p>The next-gen smartphone infused with Volgren nanotech. Adaptive body, quantum encryption, and sensory AI integration.</p>
+  <h3><b>Price- 10 Ferrari 250 GTOs</b></h3>
+
+  <div class="color-options">
+    <button class="color-dot blue" onclick="changeColor('blue')"></button>
+    <button class="color-dot white" onclick="changeColor('white')"></button>
+    <button class="color-dot black" onclick="changeColor('black')"></button>
+  </div>
+
+  <div class="view-toggle">
+    <button onclick="prevView()">⟨</button>
+    <button onclick="nextView()">⟩</button>
+  </div>
+</div>
+
+
+<div class="product-card">
+  <img id="productImageAirlink" src="images/airlinkx-blue.jpg" alt="Volgren Airlink X">
+  <h2>Volgren iX Pro Max</h2>
+  <p>AirLink – A sleek, next-gen wireless connectivity hub designed for seamless IoT integration.</p>
+  <h3><b>Price- $77777.67</b></h3>
+
+  <div class="color-options2">
+<button class="color-dot white" onclick="changeColorAirlink('white')"></button>
+<button class="color-dot red" onclick="changeColorAirlink('red')"></button>
+<button class="color-dot blue" onclick="changeColorAirlink('blue')"></button>
+
+  </div>
+
+
+</div>
+
+        <div class="product-card">
+  <img id="productImageBlackManta" src="images/blackmanta-black.jpg" alt="Volgren Black Manta">
+  <h2>Volgren Black Manta</h2>
+  <p>Classified quantum workstation powered by TR3B drive cores. Runs 200x faster than conventional hardware under stealth mode.</p>
+  <h3><b>Price- $77777.67</b></h3>
+
+  <div class="color-options3">
+<button class="color-dot white" onclick="changeColorBlackManta('white')"></button>
+<button class="color-dot black" onclick="changeColorBlackManta('black')"></button>
+
+  </div>
+</div>
+
+
+
+        <div class="product-card">
+          <img src="images/tr3bqd.jpg" alt="TR3B Quantum Drive">
+          <h2>TR3B Quantum Drive</h2>
+          <p>Experimental propulsion-grade storage engine—rumored to be derived from classified aerospace technologies.</p>
+          <p><b>Price- All of the world's GDP Combined</b></p>
+          </div>
+        </div>
+
+
+        
+      </div>
+    </section>
+  </main>
+
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Volgren Inc. All rights reserved.</p>
+  </footer>
+
+
+
+  <button id="topBtn" title="Go to top">↑ Top</button>
+
+
+<script>
+document.getElementById("topBtn").addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+
+  <script>
+function updateImage() {
+  const productImage = document.getElementById('productImage');
+  let fileName;
+
+  if (currentView === 1) {
+    fileName = `ixpromax-${currentColor}.jpg`;
+  } else {
+    fileName = `ixpromax-${currentColor}1.jpg`;
+  }
+
+  productImage.style.opacity = 0;
+  setTimeout(() => {
+    productImage.src = `images/${fileName}`;
+    productImage.style.opacity = 1;
+  }, 250);
+}
+
+
+  function changeColor(color) {
+    currentColor = color;
+    currentView = 1;
+    updateImage();
+  }
+
+  function nextView() {
+    currentView = currentView === 1 ? 2 : 1;
+    updateImage();
+  }
+
+  function prevView() {
+    currentView = currentView === 1 ? 2 : 1;
+    updateImage();
+  }
+  </script>
+
+<script>
+  function changeColorAirlink(color) {
+    const productImageAirlink = document.getElementById('productImageAirlink');
+
+    // Determine file name based on chosen color
+    let fileName;
+    if (color === 'white') {
+      fileName = 'airlinkx-white.jpg';
+    } else if (color === 'red') {
+      fileName = 'airlinkx-red.jpg';
+    }else if (color === 'blue') {
+      fileName = 'airlinkx-blue.jpg';
+    }
+
+    // Smooth fade transition when changing color
+    productImageAirlink.style.opacity = 0;
+    setTimeout(() => {
+      productImageAirlink.src = `images/${fileName}`;
+      productImageAirlink.style.opacity = 1;
+    }, 250);
+  }
+</script>
+
+<script>
+  function changeColorBlackManta(color) {
+    const productImageBlackManta = document.getElementById('productImageBlackManta');
+
+    // Determine file name based on chosen color
+    let fileName;
+    if (color === 'black') {
+      fileName = 'blackmanta-black.jpg';
+    } else if (color === 'white') {
+      fileName = 'blackmanta-white.jpg';
+    }
+
+    // Smooth fade transition when changing color
+    productImageBlackManta.style.opacity = 0;
+    setTimeout(() => {
+      productImageBlackManta.src = `images/${fileName}`;
+      productImageBlackManta.style.opacity = 1;
+    }, 250);
+  }
+</script>
+
+  
+
+</body>
+</html>

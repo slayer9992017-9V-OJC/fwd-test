@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Volgren IoT Systems</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/volgreniot.jpg" alt="Volgren Logo"></a>
+      <i class="fa fa-bars"></i>
+      <div class="nav-links">
+        <i class="fa fa-times"></i>
+        <ul>
+     <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="products.html">Our Products</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="upcoming.html">Upcoming Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+ <main>
+ <div class="about-box">
+     <h1>About Volgren</h1>
+    <p>Founded on the belief that innovation has no limits, Volgren represents the next evolution of intelligent design and performance engineering<br>
+      What began as a small research collective of engineers and designers soon transformed into a bold vision — to create machines that merge precision, technology, and emotion. Guided by our philosophy of Zenith Engineering, every Volgren concept pushes the boundaries of what a vehicle can be.
+      <br>Our flagship prototypes — from the stealth-inspired A.Z.I.R.A., to the aerodynamically radical Sabertooth, and the elegant convertible Xynith — are more than machines. They’re living proof that imagination and engineering can coexist without compromise.<br>
+      At Volgren, we don’t follow trends.We redefine them.<br>Volgren — The Future Accelerated. As part of a subsidary of the Legendary company, 
+      <b>Our Mission</b> is to ensure our products, forged from the same materials that created monsters be produced in limited numbers of only 100 with technology so advanced no one knows it exists at the palm of your hands, <b>YOU.CONTROL.THIS.EXISTENCE</b><br><br><b> PS: Volgren is highly inspired by Audi and it DOES NOT have any real connections with the real Volgren which makes bus bodies and its an australian company.</b></p1>
+    
+    <br>
+      <h2><a href="products.html" class="hero-btn">Click here to view our products</a></h2>
+      <br>
+      <h2>Our Leadership Team</h2>
+
+ <table class="team-table">
+  <tr>
+    <th></th>
+    <th>Name</th>
+    <th>Position</th>
+    <th>Responsibilities</th>
+  </tr>
+
+  <tr>
+    <td><img src="images/house.jpg" alt="Dr. Gregory House" class="team-photo"></td>
+    <td>Dr. Gregory House</td>
+    <td>Chief Executive Officer (CEO)</td>
+    <td>Founder and visionary leader behind Volgren’s next-gen engineering philosophy, “Zenith Engineering.” Oversees innovation and company direction. Once part of a notorius crew at a certain hospital, House decided he will continue his career with us after he faked his death just to see his "soon to be deceased" friend who got his terminal illness treated by us with Volgren technology</td>
+  </tr>
+
+  <tr>
+    <td><img src="images/bcs.jpg" alt="Saul Goodman" class="team-photo"></td>
+    <td>Mr. Saul Goodman</td>
+    <td>Chief Operations Officer (COO)</td>
+    <td>Manages the operational and manufacturing side of Volgren IoT Systems, ensuring flawless integration between automotive and smart systems. He's the guy that knows a guy whom knows another guy if you're willing to talk to him. Saul or Jimmy in this case was a lawyer for the notorius walter white that died back in 2011. However for Saul goodman after he was arrested and sentenced to 86 years, we bailed him out of the penitentiary to work with us.</td>
+  </tr>
+
+  <tr>
+    <td><img src="images/lscguy.jpg" alt="Los santos customs guy" class="team-photo"></td>
+    <td>Mr. Los Santos Customs Guy</td>
+    <td>Chief Financial Officer (CFO)</td>
+    <td>Heads AI integration, IoT research, and system architecture. Designs the core technology that powers all Volgren IoT devices.He also does part time jobs as a mechanic at los santos in LSCustoms. Offers to charge very little on servicing or repairing customer's vehicles which is why he has the role as a CFO</td>
+  </tr>
+  </table>
+  </section>
+</div>
+</main>
+</body>
+</header>
+
+  
+
+ <footer>
+    <p>&copy; 2025 Volgren Inc. All rights reserved.</p>
+  </footer>
+
+
+<button id="topBtn" title="Go to top">↑ Top</button>
+
+
+<script>
+document.getElementById("topBtn").addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+
+
+
+  <script>
+const navLinks = document.querySelector('.nav-links');
+const bars = document.querySelector('nav .fa-bars');
+const times = document.querySelector('nav .fa-times');
+
+
+    bars.addEventListener('click', () => navLinks.classList.add('show'));
+    times.addEventListener('click', () => navLinks.classList.remove('show'));
+</script>
+  
+
+
+</html>

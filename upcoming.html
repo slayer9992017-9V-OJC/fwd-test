@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Volgren IoT Systems</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+
+
+<body class="normal-page">
+  <!-- HEADER + NAV -->
+  <header class="header">
+    <nav>
+      <a href="index.html"><img src="images/volgreniot.jpg" alt="Volgren Logo"></a>
+      <i class="fa fa-bars"></i>  <!-- Hamburger -->
+      <div class="nav-links">
+        <i class="fa fa-times"></i> <!-- Close icon -->
+        <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="products.html">Our Products</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="upcoming.html">Upcoming Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+    <div class="about-box">
+      <h1>3 Sexy Cars: AZIRA, Devini & Sabertooth</h1>
+      <p>
+        You aren't supposed to know about these cars yet. These are highly classified Volgren projects that are still in development and testing phase. Only a select few individuals within Volgren Inc. are aware of their existence. The details about these cars, including their specifications, features, and release dates, are strictly confidential. Unauthorized disclosure of information regarding these projects is prohibited and may result in severe consequences including manipulation or DEATH. If you have come across any information about these cars, please report it to the appropriate authorities within Volgren Inc. immediately.
+      </p>
+
+      <h2>Our Upcoming Projects</h2>
+      <div class="-gallery"> <!-- Reuse your product gallery style for cars -->
+        <!-- AZIRA -->
+        <div class="product-item">
+          <img src="images/azira.jpg" alt="azira – Unknown" class="team-photo"> <!-- Placeholder: Replace with real image -->
+          <h3>A.Z.I.R.A</h3>
+          <p>
+           <b>Status:</b> ???
+          </br>
+<b>Designation:</b> ???
+        </br>
+<b>Summary:</b> ???
+          </p>
+        </div>
+
+        <!-- Devini -->
+        <div class="product-item">
+          <img src="images/sabertooth.jpg" alt="Sabertooth Car – INC cooperated car" class="team-photo"> <!-- Placeholder: Replace with real image -->
+          <h3>Sabertooth</h3>
+          <p>
+           <b>Status:</b> Unknown — Possibly never made
+           <br>
+<b>Designation:</b> High-Output Tactical Pursuit Unit
+<br>
+<b>Summary:</b> Sabertooth is aggression refined to engineering perfection an-[REDACTED]. Sabertooth does not retreat. It erases.
+          </p>
+        </div>
+
+        <!-- Sabertooth -->
+        <div class="product-item">
+          <img src="images/xynith.jpg" alt="Xynith – Aggresive spyder" class="team-photo"> <!-- Placeholder: Replace with real image -->
+          <h3>Xynith</h3>
+          <p>
+            VOLGREN XYNITH [Stealth Evolution Prototype]
+
+Status: Under Observation — Tier-1 Containment
+Designation: Cognitive Stealth Grand Tourer
+Summary:
+XYNITH exists where detection ends. Its surface refracts electromagnetic waves, sound, and heat, rendering it functionally invisible to human and artificial perception alike. Within, an experimental consciousness core allows it to anticipate observation and erase itself from memory moments before recognition. Witnesses report only shifts in shadow and a faint, low-frequency resonance that lingers after it’s gone.
+XYNITH does not appear. It is simply realized too late.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  
+  </header>
+
+  <button id="topBtn" title="Go to top">↑ Top</button>
+
+
+<script>
+document.getElementById("topBtn").addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+
+   
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Volgren Inc. All rights reserved. </p> 
+  </footer>
+
+  <!-- HAMBURGER MENU JS -->
+  <script>
+    const navLinks = document.querySelector('.nav-links');
+    const bars = document.querySelector('nav .fa-bars');
+    const times = document.querySelector('nav .fa-times');
+
+    bars.addEventListener('click', () => {
+      navLinks.classList.add('show');
+    });
+
+    times.addEventListener('click', () => {
+      navLinks.classList.remove('show');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Volgren IoT Systems</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/volgreniot.jpg" alt="Volgren Logo"></a>
+      <i class="fa fa-bars"></i>
+      <div class="nav-links">
+        <i class="fa fa-times"></i>
+        <ul>
+     <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="products.html">Our Products</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="upcoming.html">Upcoming Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="text-box">
+      <h1 class="michroma-regular">Contact Us</h1>
+      <h3>We’d love to hear from you! Reach out to us with any queries.</h3>
+    </div>
+
+     <main>
+    <section class="contact-section">
+      <div class="contact-box">
+        <h2>Headquarters</h2>
+        <table class="contact-table">
+          <tr>
+            <th>Address</th>
+            <img src="images/volgrensite.jpg" alt="volgren site" class="team-photo" style="width:300px;height:auto;"></td>
+            <p>PS: Volgren doesnt exist and its highly inspired by Audi so thats where the location is</p>
+            <td>123 Volgren Way, Tech Park, Singapore</td>
+          </tr>
+          <tr>
+            <th>Phone</th>
+            <td>+65 1234 5678</td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <td><a href="mailto:volgrendevini@gmail.com">volgrendevini@gmail.com</a></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="contact-box">
+        <h2>Send a Query</h2>
+        <form class="query-form">
+        <form action="https://formspree.io/f/{form_id}" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  </section>
+  
+
+ <button id="topBtn" title="Go to top">↑ Top</button>
+
+
+  <script>
+document.getElementById("topBtn").addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+
+
+  <footer>
+    <p>&copy; 2025 Volgren Inc. All rights reserved.</p>
+  </footer>
+
+  <script>
+  const navLinks = document.querySelector('.nav-links');
+  const bars = document.querySelector('nav .fa-bars');
+  const times = document.querySelector('nav .fa-times');
+
+  bars.addEventListener('click', () => navLinks.classList.add('show'));
+  times.addEventListener('click', () => navLinks.classList.remove('show'));
+  </script>
+
+
+
+
+</body>
+</html>

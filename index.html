@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Volgren IoT Systems</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+      <a href="index.html"><img src="images/volgreniot.jpg" alt="Volgren Logo"></a>
+      <i class="fa fa-bars"></i>
+      <div class="nav-links">
+        <i class="fa fa-times"></i>
+        <ul>
+     <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="products.html">Our Products</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="upcoming.html">Upcoming Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero-box">
+      <h1 class="michroma-regular">Volgren IoT Systems</h1>
+      <p>Your Trusted Partner in Innovative IoT Solutions. A subsidiary of the Legendary Volgren Inc</p>
+      <br>
+      <a href="aboutus.html" class="hero-btn">Click here to find out more about us</a>
+    </div>
+
+     <main>
+  <section class="homepage-section">
+    <h2>Why Choose Volgren IoT?</h2>
+    <p>Intelligent. Adaptive. Alive.
+Our IoT systems don’t just connect — they sense, adapt, and evolve with you. Powered by cutting-edge technology, every device becomes part of a living network, anticipating your needs and acting before you even command.
+
+Secure. Seamless. Limitless.
+Volgren IoT merges precision, protection, and performance, creating a network that feels alive yet utterly reliable. This isn’t just IoT — this is technology that thinks, reacts, and grows with you.</p>
+  </section>
+
+  <section class="homepage-section">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Custom IoT Device Development</li>
+      <li>Cloud Integration and Data Analytics</li>
+      <li>End-to-End IoT Solutions</li>
+      <li>Consulting and Support</li>
+
+      <br>
+      <h2><a href="contactus.html" class="hero-btn">Any enquiries or questions? Click here to contact us</a></h2>
+    </ul>
+  </section>
+</main>
+  </header>
+
+  <button id="topBtn" title="Go to top">↑ Top</button>
+
+
+  <script>
+document.getElementById("topBtn").addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+  <footer>
+    <p>&copy; 2025 Volgren Inc. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const navLinks = document.querySelector('.nav-links');
+    const bars = document.querySelector('nav .fa-bars');
+    const times = document.querySelector('nav .fa-times');
+
+    bars.addEventListener('click', () => navLinks.classList.add('show'));
+    times.addEventListener('click', () => navLinks.classList.remove('show'));
+  </script>
+</body>
+</html>
