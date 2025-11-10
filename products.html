@@ -199,11 +199,15 @@ function updateImage() {
 </script>
 
 <script>
-bars.addEventListener('click', () => navLinks.classList.add('show'));
-  times.addEventListener('click', () => navLinks.classList.remove('show'));
-</script>
+    const navLinks = document.querySelector('.nav-links');
+    const bars = document.querySelector('nav .fa-bars');
+    const times = document.querySelector('nav .fa-times');
 
+    bars.addEventListener('click', () => navLinks.classList.add('show'));
+    times.addEventListener('click', () => navLinks.classList.remove('show'));
+  </script>
 </body>
 </html>
+
 
 
